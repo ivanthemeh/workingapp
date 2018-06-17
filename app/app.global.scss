@@ -1,0 +1,178 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~font-awesome/css/font-awesome.css";
+// @import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~bootstrap-sweetalert/dist/sweetalert.css";
+// @import "~react-table/react-table.css";
+// @import "./css/react-table.scss";
+// @import "./css/transformicon.scss";
+@import "~tui-calendar/dist/tui-calendar.css";
+@import "~tui-date-picker/dist/tui-date-picker.css";
+@import "~tui-time-picker/dist/tui-time-picker.css";
+@import "./components/TuiCalendar/css/default.css";
+@import "./components/TuiCalendar/css/icons.css";
+
+@font-face {
+  font-family: "Material Icons";
+  src: url("./material-ui-icons.woff2") format("woff2");
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.unclickable {
+  pointer-events: none; 
+}
+
+html {
+  height: 100vh;
+  overflow: auto;
+}
+
+.ButtonAppBar-root-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.tui-full-calendar-popup {
+  color: #000 !important;
+}
+
+#addHardwareSelect {
+  button {
+    display: none;
+  }
+  #root__description {
+    text-align: center;
+  }
+}
+
+
+.custom-table .t-th, .custom-table div {
+  color: #000;
+}
+
+.no-gutter {
+  padding: 10px 0;
+}
+
+// button:hover, input[type="submit"]:hover, .btn.btn-default:hover {
+//   background: #fff !important;
+//   color: #000 !important;
+//   border: 1px solid #000;
+// }
+// button, input[type="submit"], .btn.btn-default {
+//   border: 1px solid transparent;
+// }
+
+button[type="submit"]:hover {
+  color: #000;
+}
+
+.rt-tr-group {
+  cursor: pointer;
+}
+
+.ReactTable .rt-expander {
+    display: inline-block;
+    position: absolute;
+    color: transparent;
+    margin: 0 10px;
+    width: 100%;
+    text-align: left;
+    &:after {
+      left: 0;
+    }
+}
+
+input {
+  color: #000;
+}
+
+.collapse-section {
+  transition: all .25s linear;
+  height: 60px !important;
+  overflow: hidden;
+}
+
+.removeField, .removeGroup {
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    color: #61dafb;
+  }
+}
+
+body {
+  position: relative;
+  color: white;
+  min-height: 100vh;
+  background-color: #232c39;
+  background-image: linear-gradient(45deg, rgba(0, 216, 255, 0.5) 10%, rgba(0, 1, 127, 0.7));
+  font-family: Arial, Helvetica, Helvetica Neue, serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+p {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.active {
+  color: #61dafb !important;
+  text-decoration: none;
+}
+
+.hide-addClientForm {
+  right: -50%;
+}
